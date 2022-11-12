@@ -3,10 +3,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="compile.css" />
     <title>Endless possibilities for every business - Flutterwave</title>
   </head>
   <body>
-    <h1 class="style">Hello World</h1>
+    <header class="header">
+      <nav class="header__nav">
+        <img
+          class="header__logo"
+          alt="Flutterwave_Logo"
+          src="./images/icons/Flutterwave_Logo.svg"
+        />
+
+        <button
+          class="menu"
+          onclick="this.classList.toggle('active');"
+        ></button>
+
+        <ul class="header__nav__list">
+          <li class="header__nav__item">Payments</li>
+          <li class="header__nav__item">Commerce</li>
+          <li class="header__nav__item">Issuing</li>
+          <li class="header__nav__item">Capital</li>
+          <li class="header__nav__item">Grow</li>
+          <li class="header__nav__item">FaaS</li>
+        </ul>
+
+        <button class="header__btn">Sign in</button>
+      </nav>
+    </header>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

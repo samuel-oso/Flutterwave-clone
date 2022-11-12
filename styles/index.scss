@@ -1,5 +1,11 @@
 @import "./base/reset";
 
+@import "./utlis/variables.scss";
 @import "./utlis/mixins.scss";
+@import "./utlis/responsive.scss";
 
-@import "./base/base";
+@import "./base/fonts.scss";
+@import "./base/base.scss";
+
+@import "./components/header.scss";
+@import "./components/menu.scss";

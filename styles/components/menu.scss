@@ -1,0 +1,54 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  height: 20px;
+  width: 24px;
+  border: 0px;
+  padding: 3px;
+  background: transparent;
+  transition: all 250ms ease-out;
+  cursor: pointer;
+
+  @include breakpoint-up(desktop) {
+    display: none;
+  }
+}
+
+.menu:before,
+.menu:after {
+  content: "";
+  width: 24px;
+  height: 1.97px;
+  border-radius: 10px;
+  position: absolute;
+  background: $dark;
+  transition: all 250ms ease-out;
+  will-change: transform;
+}
+
+.menu:before {
+  transform: translateY(-9px);
+  margin-top: 10px;
+}
+
+.menu:after {
+  margin-top: 10px;
+}
+
+.burger:after {
+  transform: translateY(9px);
+}
+
+// line transition
+
+.active.menu:before {
+  transform: translateY(0) rotate(45deg);
+  margin-top: 0px;
+}
+
+.active.menu:after {
+  transform: translateY(0) rotate(-45deg);
+  margin-top: 0px;
+}
