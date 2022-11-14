@@ -7,7 +7,6 @@
 
 body {
   @extend %cover;
-  position: fixed;
 
   font-family: "font-moderat-regular";
 }
@@ -24,4 +23,16 @@ button {
   color: inherit;
   cursor: pointer;
   outline: none;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
 }

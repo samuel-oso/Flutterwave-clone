@@ -18,7 +18,7 @@
 
         <button
           class="menu"
-          onclick="this.classList.toggle('active');"
+          onclick="this.classList.toggle('active'); buttonClicked();"
         ></button>
 
         <ul class="header__nav__list">
@@ -32,8 +32,93 @@
 
         <button class="header__btn">Sign in</button>
       </nav>
+
+      <section id="nav__dropdown">
+        <div class="nav__dropdown__menuFill mb-18">
+          <h4>PAYMENTS</h4>
+          <div class="dropdown__content">
+            <img src="./images/icons/Payments.svg" alt="Collect payments" />
+            <div class="dropdown__content__text">
+              <h6>Collect payments</h6>
+              <p>Collect payment in 30+ currencies</p>
+            </div>
+          </div>
+          <div class="dropdown__content">
+            <img src="./images/icons/Send.svg" alt="Collect payments" />
+            <div class="dropdown__content__text">
+              <h6>Send money</h6>
+              <p>Send money to anyone or business globally.</p>
+            </div>
+          </div>
+          <div class="dropdown__content mb-0">
+            <img src="./images/icons/Demo.svg" alt="Collect payments" />
+            <div class="dropdown__content__text">
+              <h6>Checkout demo</h6>
+              <p>Experience checkout yourself</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown__menuFill pt-10">
+          <h4>COMMERCE</h4>
+          <div class="dropdown__content">
+            <img src="./images/icons/Store.svg" alt="Collect payments" />
+            <div class="dropdown__content__text">
+              <h6>Store</h6>
+              <p>Start selling online</p>
+            </div>
+          </div>
+          <div class="dropdown__content">
+            <img src="./images/icons/Links.svg" alt="Collect payments" />
+            <div class="dropdown__content__text">
+              <h6>Payment Links</h6>
+              <p>Accept payments without writing code.</p>
+            </div>
+          </div>
+          <div class="dropdown__content mb-0">
+            <img src="./images/icons/Invoices.svg" alt="Collect payments" />
+            <div class="dropdown__content__text">
+              <h6>Invoices</h6>
+              <p>Create professional invoices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav__dropdown__menu">
+          <h6>Issuing</h6>
+          <p>Issue physical & virtual cards</p>
+        </div>
+        <div class="nav__dropdown__menu">
+          <h6>Capital</h6>
+          <p>Get quick access to flexible loans to grow your business.</p>
+        </div>
+        <div class="nav__dropdown__menu">
+          <h6>Grow</h6>
+          <p>Register & incorporate your business from anywhere</p>
+        </div>
+        <div class="nav__dropdown__menu">
+          <h6>FaaS</h6>
+          <p>Embed financial services into your product</p>
+        </div>
+        <div class="dropdown__btn">
+          <button>Sign in</button>
+        </div>
+      </section>
     </header>
 
-    <script src="js/script.js"></script>
+    <main>
+      <section class="hero">
+        <div class="hero__card">
+          <div class="hero__info">
+            <h4><span>Endless possibilities</span> for every business</h4>
+            <p>
+              Sell online, process payments, build financial products, or use
+              business tools designed to grow your business.
+            </p>
+            <button>Contact sales</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

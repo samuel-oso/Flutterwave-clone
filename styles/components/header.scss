@@ -1,5 +1,6 @@
 .header {
   padding: 16px 0 0;
+  overflow-x: hidden;
 
   @include breakpoint-up(desktop) {
     padding: 30px 20px 0;
@@ -11,6 +12,7 @@
 
   justify-content: space-between;
   padding: 0 20px 0 10px;
+  margin-bottom: 39px;
 
   @include breakpoint-up(desktop) {
     padding: 0px;
@@ -61,4 +63,83 @@
     color: $white;
     transition: all 0.3s ease;
   }
+}
+
+#nav__dropdown {
+  display: none;
+  position: absolute;
+  background-color: $white;
+  width: 100%;
+
+  @include breakpoint-up(desktop) {
+    display: none !important;
+  }
+}
+
+.nav__dropdown__menuFill {
+  border-bottom: 0.5px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  padding-bottom: 18px;
+}
+
+.nav__dropdown__menuFill h4 {
+  font-size: 12px;
+  margin-bottom: 14px;
+  padding: 0 20px;
+  cursor: auto;
+  color: $dim-gray;
+  font-family: "font-moderat-medium";
+}
+
+.dropdown__content,
+.nav__dropdown__menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.nav__dropdown__menu {
+  flex-direction: column;
+}
+
+.dropdown__content img {
+  margin-right: 14px;
+  width: 42px;
+  height: 42px;
+}
+
+.dropdown__content__text h6,
+.nav__dropdown__menu h6 {
+  margin-bottom: 6px;
+  font-family: "font-moderat-bold";
+  color: $space-cadet;
+  line-height: 18px;
+  font-size: 15px;
+}
+
+.dropdown__content__text p,
+.nav__dropdown__menu p {
+  font-size: 14px;
+  line-height: 17px;
+  color: $space-cadet;
+  font-family: "font-moderat-regular";
+}
+
+.dropdown__btn button {
+  padding: 15px 50px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 10px;
+  background-color: $ebony-clay;
+  font-family: "font-moderat-regular";
+  color: $white;
+  width: 100%;
+}
+
+.dropdown__btn {
+  margin: 30px 20px;
+  display: flex;
+  justify-content: center;
 }

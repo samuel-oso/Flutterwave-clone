@@ -1,0 +1,79 @@
+.hero {
+  padding: 34px 20px;
+  overflow-x: hidden;
+
+  @include breakpoint-up(tablet) {
+    padding: 53px 20px;
+  }
+
+  @include breakpoint-up(desktop) {
+    padding: 95px 20px;
+  }
+}
+
+.hero__card {
+  width: 100%;
+  max-width: 1092px;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.hero__info {
+  max-width: 750px;
+  flex: 0 1 auto;
+}
+
+.hero__card h4 {
+  @extend %heading;
+
+  margin-bottom: 32px;
+  width: 100%;
+
+  @include breakpoint-up(tablet) {
+    font-size: 70px;
+  }
+
+  @include breakpoint-up(desktop) {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+}
+
+.hero__card span {
+  color: $sea-buckthorn;
+}
+
+.hero__card p {
+  font-family: "font-moderat-light";
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 35px;
+
+  @include breakpoint-up(tablet) {
+    max-width: 610px;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.hero__card button {
+  background-color: $haiti;
+  color: $white;
+  font-size: 3.7vw;
+  line-height: 4vw;
+  padding: 4.5vw 4.3vw;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "font-moderat-bold";
+
+  @include breakpoint-up(tablet) {
+    padding: 21px 23px;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all 0.3s ease;
+  }
+}
