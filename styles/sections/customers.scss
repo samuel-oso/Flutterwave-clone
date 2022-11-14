@@ -22,8 +22,11 @@
 
 .customer__content__item1 {
   margin-bottom: 30px;
-  width: calc(59.5% - 3.25rem);
-  flex: 0 1 auto;
+
+  @include breakpoint-up(tablet) {
+    width: calc(59.5% - 3.25rem);
+    flex: 0 1 auto;
+  }
 }
 
 .image_wrapper {
@@ -38,11 +41,12 @@
   @include breakpoint-up(tablet) {
     object-position: bottom right;
     height: 550px;
-    margin-top: 24px;
+    margin-top: 46px;
   }
 
   @include breakpoint-up(desktop) {
     height: 752px;
+    margin-top: 24px;
   }
 }
 
@@ -53,6 +57,9 @@
 
     width: calc(44% - 3.5rem);
     flex: 0 1 auto;
+    margin-top: -155px;
+  }
+  @include breakpoint-up(desktop) {
     margin-top: -175px;
   }
 }
