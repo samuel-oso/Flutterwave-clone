@@ -1,0 +1,102 @@
+.commerce {
+  padding: 20px;
+
+  @include breakpoint-up(tablet) {
+    padding: 170px 20px;
+  }
+}
+
+.commerce__container {
+  max-width: 1092px;
+  margin: 0 auto;
+}
+
+.commerce__container h2 {
+  @extend %heading;
+  margin-bottom: 62px;
+  max-width: 650px;
+  letter-spacing: -0.7px;
+
+  @include breakpoint-up(tablet) {
+    letter-spacing: -2px;
+    word-spacing: 3px;
+  }
+}
+
+.commerce__container h2 span {
+  color: $chateau-green;
+}
+
+.commerce__section h6 {
+  font-family: "font-moderat-bold";
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 16px;
+  padding-left: 5px;
+  color: $vampire-black;
+
+  @include breakpoint-up(tablet) {
+    font-size: 24px;
+  }
+}
+
+.commerce__section p {
+  font-family: "font-moderat-light";
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 27px;
+  padding-left: 5px;
+  color: $cod-gray;
+
+  @include breakpoint-up(tablet) {
+    font-size: 20px;
+  }
+}
+
+.commerce__section button {
+  font-family: "font-moderat-medium";
+  background-color: $haiti;
+  border-radius: 10px;
+  color: $white;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 25px;
+}
+
+.commerce__section {
+  margin-bottom: 70px;
+  padding-top: 0;
+  width: 100%;
+}
+
+.img_caption {
+  font-family: "font-moderat-medium" !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  margin-top: 20px !important;
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+
+.img_caption span,
+.commerce__tools span {
+  color: $chateau-green !important;
+}
+
+.commerce__tools {
+  color: $cod-gray;
+  font-family: "font-moderat-light";
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.commerce__btn {
+  font-size: 3.7vw;
+  line-height: 4vw;
+  font-family: "font-moderat-medium";
+  background-color: $haiti;
+  border-radius: 10px;
+  color: $white;
+  padding: 22px 28px;
+}

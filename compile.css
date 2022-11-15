@@ -142,7 +142,7 @@ body {
   justify-content: center;
 }
 
-.payments__container h2 {
+.commerce__container h2, .payments__container h2 {
   font-family: "font-millik";
   font-size: 35px;
   line-height: 44px;
@@ -150,13 +150,13 @@ body {
   color: #1d1d1d;
 }
 @media (min-width: 601px) {
-  .payments__container h2 {
+  .commerce__container h2, .payments__container h2 {
     font-size: 50px;
     line-height: 56px;
   }
 }
 @media (min-width: 901px) {
-  .payments__container h2 {
+  .commerce__container h2, .payments__container h2 {
     font-size: 80px;
     line-height: 86px;
   }
@@ -238,9 +238,69 @@ button {
   margin-bottom: 18px;
 }
 
+.mb-68 {
+  margin-bottom: 68px;
+}
+
 .container {
   max-width: 1680px;
   margin: 0 auto;
+}
+
+.image_wrapper {
+  position: relative;
+}
+
+.image__main {
+  object-fit: cover;
+  width: 100%;
+}
+
+.feature {
+  margin-bottom: 60px;
+}
+@media (min-width: 901px) {
+  .feature {
+    margin-bottom: 100px;
+  }
+}
+
+.feature p {
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 4px;
+}
+@media (min-width: 601px) {
+  .feature p {
+    font-size: 20px;
+    padding-left: 5px;
+  }
+}
+
+.feature a {
+  font-family: "font-moderat-medium";
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 5px;
+  filter: none;
+  padding: 4px 5px;
+  color: #fb4e20;
+  cursor: pointer;
+  width: fit-content;
+}
+.feature a:hover span img {
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.feature a span img {
+  width: 7.2px;
+  height: 10.8px;
+  flex: 0 0 auto;
+  height: auto;
+  margin-left: 9px;
+  margin-top: 4px;
 }
 
 .header {
@@ -563,11 +623,6 @@ button {
   }
 }
 
-.image_wrapper {
-  position: relative;
-  height: 100%;
-}
-
 .customer__content__item1 img {
   object-fit: cover;
   width: 100%;
@@ -827,51 +882,110 @@ button {
   }
 }
 
-.feature {
-  margin-bottom: 60px;
-}
-@media (min-width: 901px) {
-  .feature {
-    margin-bottom: 100px;
-  }
-}
-
-.feature p {
-  font-size: 18px;
-  line-height: 28px;
-  padding-left: 4px;
+.commerce {
+  padding: 20px;
 }
 @media (min-width: 601px) {
-  .feature p {
-    font-size: 20px;
-    padding-left: 5px;
+  .commerce {
+    padding: 170px 20px;
   }
 }
 
-.feature a {
-  font-family: "font-moderat-medium";
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  border-radius: 5px;
-  filter: none;
-  padding: 4px 5px;
-  color: #fb4e20;
-  cursor: pointer;
-  width: fit-content;
-}
-.feature a:hover span img {
-  margin-left: 15px;
-  transition: all 0.3s ease;
+.commerce__container {
+  max-width: 1092px;
+  margin: 0 auto;
 }
 
-.feature a span img {
-  width: 7.2px;
-  height: 10.8px;
-  flex: 0 0 auto;
-  height: auto;
-  margin-left: 9px;
-  margin-top: 4px;
+.commerce__container h2 {
+  margin-bottom: 62px;
+  max-width: 650px;
+  letter-spacing: -0.7px;
+}
+@media (min-width: 601px) {
+  .commerce__container h2 {
+    letter-spacing: -2px;
+    word-spacing: 3px;
+  }
+}
+
+.commerce__container h2 span {
+  color: #35a162;
+}
+
+.commerce__section h6 {
+  font-family: "font-moderat-bold";
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 16px;
+  padding-left: 5px;
+  color: #050505;
+}
+@media (min-width: 601px) {
+  .commerce__section h6 {
+    font-size: 24px;
+  }
+}
+
+.commerce__section p {
+  font-family: "font-moderat-light";
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 27px;
+  padding-left: 5px;
+  color: #1d1d1d;
+}
+@media (min-width: 601px) {
+  .commerce__section p {
+    font-size: 20px;
+  }
+}
+
+.commerce__section button {
+  font-family: "font-moderat-medium";
+  background-color: #0a0e27;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 25px;
+}
+
+.commerce__section {
+  margin-bottom: 70px;
+  padding-top: 0;
+  width: 100%;
+}
+
+.img_caption {
+  font-family: "font-moderat-medium" !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  margin-top: 20px !important;
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+
+.img_caption span,
+.commerce__tools span {
+  color: #35a162 !important;
+}
+
+.commerce__tools {
+  color: #1d1d1d;
+  font-family: "font-moderat-light";
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.commerce__btn {
+  font-size: 3.7vw;
+  line-height: 4vw;
+  font-family: "font-moderat-medium";
+  background-color: #0a0e27;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 22px 28px;
 }
 
 /*# sourceMappingURL=compile.css.map */
