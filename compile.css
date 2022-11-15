@@ -242,6 +242,24 @@ button {
   margin-bottom: 68px;
 }
 
+@media (min-width: 901px) {
+  .mb-lg-0 {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .pb-lg-10 {
+    padding-bottom: 10px !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .mt-lg-8 {
+    margin-top: -8%;
+  }
+}
+
 .container {
   max-width: 1680px;
   margin: 0 auto;
@@ -777,6 +795,11 @@ button {
     padding: 170px 20px;
   }
 }
+@media (min-width: 901px) {
+  .payments {
+    padding: 190px 20px;
+  }
+}
 
 .payments__container {
   max-width: 1092px;
@@ -898,13 +921,13 @@ button {
 
 .commerce__container h2 {
   margin-bottom: 62px;
-  max-width: 650px;
   letter-spacing: -0.7px;
 }
 @media (min-width: 601px) {
   .commerce__container h2 {
     letter-spacing: -2px;
     word-spacing: 3px;
+    margin-bottom: 108px;
   }
 }
 
@@ -912,6 +935,58 @@ button {
   color: #35a162;
 }
 
+.commerce__features {
+  margin-bottom: 88px;
+}
+@media (min-width: 601px) {
+  .commerce__features {
+    margin-bottom: 182px;
+  }
+}
+
+@media (min-width: 901px) {
+  .commerce__features :nth-child(2) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 901px) {
+  .commerce__features__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 901px) {
+  .commerce__features__content :nth-child(2) {
+    margin-left: 85px;
+    width: 51%;
+  }
+}
+
+.commerce__section {
+  margin-bottom: 70px;
+  padding-top: 0;
+  width: 100%;
+}
+@media (min-width: 901px) {
+  .commerce__section {
+    margin-bottom: 0px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 901px) {
+  .commerce__section__card {
+    height: auto;
+    padding-top: 100px;
+  }
+}
+
+.commerce__section__card h6,
 .commerce__section h6 {
   font-family: "font-moderat-bold";
   font-size: 20px;
@@ -921,11 +996,14 @@ button {
   color: #050505;
 }
 @media (min-width: 601px) {
+  .commerce__section__card h6,
   .commerce__section h6 {
     font-size: 24px;
+    margin-bottom: 19px;
   }
 }
 
+.commerce__section__card p,
 .commerce__section p {
   font-family: "font-moderat-light";
   font-size: 18px;
@@ -935,12 +1013,22 @@ button {
   color: #1d1d1d;
 }
 @media (min-width: 601px) {
+  .commerce__section__card p,
   .commerce__section p {
     font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 901px) {
+  .commerce__section__card p,
+  .commerce__section p {
+    width: 100% !important;
+    margin-left: 0px !important;
   }
 }
 
-.commerce__section button {
+.commerce__section__card button {
   font-family: "font-moderat-medium";
   background-color: #0a0e27;
   border-radius: 10px;
@@ -950,10 +1038,30 @@ button {
   padding: 15px 25px;
 }
 
-.commerce__section {
-  margin-bottom: 70px;
-  padding-top: 0;
-  width: 100%;
+@media (min-width: 901px) {
+  .figure1 {
+    height: 648px;
+  }
+}
+
+@media (min-width: 601px) {
+  .figure2 {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 901px) {
+  .figure2 {
+    height: 697px !important;
+    margin-left: 0px !important;
+    margin-right: 85px;
+    width: 58% !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .figure2 img {
+    max-height: 648px;
+  }
 }
 
 .img_caption {
@@ -963,6 +1071,12 @@ button {
   margin-top: 20px !important;
   text-align: center;
   margin-bottom: 0px !important;
+}
+@media (min-width: 601px) {
+  .img_caption {
+    font-size: 18px !important;
+    margin-top: 21px !important;
+  }
 }
 
 .img_caption span,
@@ -977,6 +1091,20 @@ button {
   line-height: 50px;
   margin-bottom: 40px;
 }
+@media (min-width: 601px) {
+  .commerce__tools {
+    font-size: 50px;
+    margin-bottom: 45px;
+    line-height: 80px;
+  }
+}
+@media (min-width: 901px) {
+  .commerce__tools {
+    font-size: 79px;
+    line-height: 110px;
+    margin-bottom: 48px;
+  }
+}
 
 .commerce__btn {
   font-size: 3.7vw;
@@ -986,6 +1114,20 @@ button {
   border-radius: 10px;
   color: #ffffff;
   padding: 22px 28px;
+}
+@media (min-width: 601px) {
+  .commerce__btn {
+    padding: 28px 32px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: 901px) {
+  .feature {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
 }
 
 /*# sourceMappingURL=compile.css.map */

@@ -4,6 +4,10 @@
   @include breakpoint-up(tablet) {
     padding: 170px 20px;
   }
+
+  @include breakpoint-up(desktop) {
+    padding: 190px 20px;
+  }
 }
 
 .payments__container {

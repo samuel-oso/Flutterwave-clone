@@ -45,6 +45,24 @@ button {
   margin-bottom: 68px;
 }
 
+.mb-lg-0 {
+  @include breakpoint-up(desktop) {
+    margin-bottom: 0px !important;
+  }
+}
+
+.pb-lg-10 {
+  @include breakpoint-up(desktop) {
+    padding-bottom: 10px !important;
+  }
+}
+
+.mt-lg-8 {
+  @include breakpoint-up(desktop) {
+    margin-top: -8%;
+  }
+}
+
 .container {
   max-width: 1680px;
   margin: 0 auto;

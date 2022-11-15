@@ -14,12 +14,12 @@
 .commerce__container h2 {
   @extend %heading;
   margin-bottom: 62px;
-  max-width: 650px;
   letter-spacing: -0.7px;
 
   @include breakpoint-up(tablet) {
     letter-spacing: -2px;
     word-spacing: 3px;
+    margin-bottom: 108px;
   }
 }
 
@@ -27,6 +27,56 @@
   color: $chateau-green;
 }
 
+.commerce__features {
+  margin-bottom: 88px;
+
+  @include breakpoint-up(tablet) {
+    margin-bottom: 182px;
+  }
+}
+
+.commerce__features :nth-child(2) {
+  @include breakpoint-up(desktop) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+}
+
+.commerce__features__content {
+  @include breakpoint-up(desktop) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}
+
+.commerce__features__content :nth-child(2) {
+  @include breakpoint-up(desktop) {
+    margin-left: 85px;
+    width: 51%;
+  }
+}
+
+.commerce__section {
+  margin-bottom: 70px;
+  padding-top: 0;
+  width: 100%;
+
+  @include breakpoint-up(desktop) {
+    margin-bottom: 0px;
+    width: 350px;
+  }
+}
+
+.commerce__section__card {
+  @include breakpoint-up(desktop) {
+    height: auto;
+    padding-top: 100px;
+  }
+}
+
+.commerce__section__card h6,
 .commerce__section h6 {
   font-family: "font-moderat-bold";
   font-size: 20px;
@@ -37,9 +87,11 @@
 
   @include breakpoint-up(tablet) {
     font-size: 24px;
+    margin-bottom: 19px;
   }
 }
 
+.commerce__section__card p,
 .commerce__section p {
   font-family: "font-moderat-light";
   font-size: 18px;
@@ -50,10 +102,17 @@
 
   @include breakpoint-up(tablet) {
     font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 32px;
+  }
+
+  @include breakpoint-up(desktop) {
+    width: 100% !important;
+    margin-left: 0px !important;
   }
 }
 
-.commerce__section button {
+.commerce__section__card button {
   font-family: "font-moderat-medium";
   background-color: $haiti;
   border-radius: 10px;
@@ -63,10 +122,29 @@
   padding: 15px 25px;
 }
 
-.commerce__section {
-  margin-bottom: 70px;
-  padding-top: 0;
-  width: 100%;
+.figure1 {
+  @include breakpoint-up(desktop) {
+    height: 648px;
+  }
+}
+
+.figure2 {
+  @include breakpoint-up(tablet) {
+    margin-bottom: 0px;
+  }
+
+  @include breakpoint-up(desktop) {
+    height: 697px !important;
+    margin-left: 0px !important;
+    margin-right: 85px;
+    width: 58% !important;
+  }
+}
+
+.figure2 img {
+  @include breakpoint-up(desktop) {
+    max-height: 648px;
+  }
 }
 
 .img_caption {
@@ -76,6 +154,11 @@
   margin-top: 20px !important;
   text-align: center;
   margin-bottom: 0px !important;
+
+  @include breakpoint-up(tablet) {
+    font-size: 18px !important;
+    margin-top: 21px !important;
+  }
 }
 
 .img_caption span,
@@ -89,6 +172,18 @@
   font-size: 36px;
   line-height: 50px;
   margin-bottom: 40px;
+
+  @include breakpoint-up(tablet) {
+    font-size: 50px;
+    margin-bottom: 45px;
+    line-height: 80px;
+  }
+
+  @include breakpoint-up(desktop) {
+    font-size: 79px;
+    line-height: 110px;
+    margin-bottom: 48px;
+  }
 }
 
 .commerce__btn {
@@ -99,4 +194,17 @@
   border-radius: 10px;
   color: $white;
   padding: 22px 28px;
+
+  @include breakpoint-up(tablet) {
+    padding: 28px 32px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.feature {
+  @include breakpoint-up(desktop) {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
 }
