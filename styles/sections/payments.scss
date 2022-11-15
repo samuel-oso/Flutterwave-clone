@@ -1,0 +1,152 @@
+.payments {
+  padding: 20px;
+
+  @include breakpoint-up(tablet) {
+    padding: 170px 20px;
+  }
+}
+
+.payments__container {
+  max-width: 1092px;
+  margin: 0 auto;
+}
+
+.payments__container h2 {
+  @extend %heading;
+  margin-bottom: 58px;
+  max-width: 650px;
+
+  @include breakpoint-up(tablet) {
+    letter-spacing: -2px;
+    word-spacing: 3px;
+  }
+}
+
+.payments__features {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include breakpoint-up(desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.payments__container h2 span {
+  color: $sea-buckthorn;
+}
+
+.payments__features__content {
+  @include breakpoint-up(desktop) {
+    flex: 0 1 auto;
+    width: calc(33.33333% - 40px);
+  }
+}
+
+.payments__features__content h6 {
+  font-family: "font-moderat-bold";
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 19px;
+  padding-left: 5px;
+  color: $vampire-black;
+
+  @include breakpoint-up(tablet) {
+    font-size: 24px;
+  }
+}
+
+.payments__features__content p {
+  font-family: "font-moderat-light";
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  padding-left: 5px;
+  color: $cod-gray;
+
+  @include breakpoint-up(tablet) {
+    font-size: 20px;
+  }
+}
+
+.payments__features__content button {
+  font-family: "font-moderat-medium";
+  background-color: $haiti;
+  border-radius: 10px;
+  color: $white;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 25px;
+}
+
+.payments__features__contentMedia {
+  margin: 60px 0;
+  max-width: 320px;
+  flex: 0 1 auto;
+  width: 100%;
+  text-align: center;
+
+  @include breakpoint-up(desktop) {
+    margin: 0px;
+  }
+}
+
+.payments__features__contentMedia img {
+  max-height: 550px;
+  object-position: left;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.2));
+
+  @include breakpoint-up(tablet) {
+    max-height: 650px;
+  }
+}
+
+.feature {
+  margin-bottom: 60px;
+
+  @include breakpoint-up(desktop) {
+    margin-bottom: 100px;
+  }
+}
+
+.feature p {
+  font-size: 18px;
+  line-height: 28px;
+  padding-left: 4px;
+
+  @include breakpoint-up(tablet) {
+    font-size: 20px;
+    padding-left: 5px;
+  }
+}
+
+.feature a {
+  font-family: "font-moderat-medium";
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 5px;
+  filter: none;
+  padding: 4px 5px;
+  color: $pomegranate;
+  cursor: pointer;
+  width: fit-content;
+
+  &:hover span img {
+    margin-left: 15px;
+    transition: all 0.3s ease;
+  }
+}
+
+.feature a span img {
+  width: 7.2px;
+  height: 10.8px;
+  flex: 0 0 auto;
+  height: auto;
+  margin-left: 9px;
+  margin-top: 4px;
+}

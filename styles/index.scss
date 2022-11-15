@@ -1,8 +1,8 @@
 @import "./base/reset";
 
 @import "./utlis/variables.scss";
-@import "./utlis/mixins.scss";
 @import "./utlis/responsive.scss";
+@import "./utlis/mixins.scss";
 
 @import "./base/fonts.scss";
 @import "./base/base.scss";
@@ -13,3 +13,4 @@
 @import "./sections/hero.scss";
 @import "./sections/customers.scss";
 @import "./sections/business.scss";
+@import "./sections/payments.scss";
