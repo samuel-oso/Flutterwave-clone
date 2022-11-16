@@ -142,7 +142,7 @@ body {
   justify-content: center;
 }
 
-.commerce__container h2, .payments__container h2 {
+.api__container h2, .commerce__container h2, .payments__container h2 {
   font-family: "font-millik";
   font-size: 35px;
   line-height: 44px;
@@ -150,13 +150,13 @@ body {
   color: #1d1d1d;
 }
 @media (min-width: 601px) {
-  .commerce__container h2, .payments__container h2 {
+  .api__container h2, .commerce__container h2, .payments__container h2 {
     font-size: 50px;
     line-height: 56px;
   }
 }
 @media (min-width: 901px) {
-  .commerce__container h2, .payments__container h2 {
+  .api__container h2, .commerce__container h2, .payments__container h2 {
     font-size: 80px;
     line-height: 86px;
   }
@@ -1127,6 +1127,98 @@ button {
   .feature {
     width: 100% !important;
     margin-left: 0px !important;
+  }
+}
+
+.api {
+  padding: 20px;
+}
+@media (min-width: 601px) {
+  .api {
+    padding: 160px 20px;
+  }
+}
+
+.api__container {
+  max-width: 1092px;
+  margin: 0 auto;
+}
+
+.api__container h2 {
+  margin-bottom: 18px;
+  letter-spacing: -0.7px;
+}
+@media (min-width: 601px) {
+  .api__container h2 {
+    letter-spacing: -2px;
+    word-spacing: 3px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 601px) {
+  .api__container h2 {
+    max-width: 842px;
+  }
+}
+
+.api__container h2 span {
+  color: #eb7da7;
+}
+
+.api__container p {
+  font-family: "font-moderat-light";
+  color: #1d1d1d;
+  margin-bottom: 31px;
+  max-width: 619px;
+  font-size: 18px;
+  line-height: 28px;
+}
+@media (min-width: 601px) {
+  .api__container p {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+
+.api__list {
+  margin-bottom: 70px;
+}
+
+.api__list li {
+  font-family: "font-moderat-light";
+  color: #1d1d1d;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 34px;
+  position: relative;
+}
+
+.api__list li::before {
+  background-color: #262c55;
+  border-radius: 100%;
+  content: "";
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: 9px;
+  width: 20px;
+}
+
+.api__btn {
+  font-family: "font-moderat-medium";
+  background-color: #0a0e27;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 3.7vw;
+  line-height: 4vw;
+  padding: 22px 28px;
+}
+@media (min-width: 601px) {
+  .api__btn {
+    padding: 28px 32px;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 
