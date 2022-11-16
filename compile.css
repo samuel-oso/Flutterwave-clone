@@ -1320,4 +1320,133 @@ button {
   fill: #ffffff !important;
 }
 
+.footer {
+  padding: 20px 20px 0;
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 1092px;
+}
+
+.footer__card {
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: none !important;
+  padding: 0;
+}
+
+.footer__card__content {
+  position: relative;
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+.footer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.footer__header h6 {
+  position: relative;
+  color: #1d1d1d;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 2px;
+}
+
+.footer__nav {
+  height: 0;
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.footer__nav p {
+  font-family: "font-moderat-light";
+  color: #1d1d1d;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 24px;
+  padding: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.footer__nav :last-child {
+  margin-bottom: 0px;
+}
+
+.footer__card__content.active .footer__header img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer__card__content.active .footer__nav {
+  position: relative;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.location,
+.copywrite {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.copywrite {
+  font-family: "font-moderat-light";
+  font-size: 16px;
+  color: #1d1d1d;
+}
+
+.location :first-child {
+  background: #ffffff;
+  border: none;
+  border-radius: 100%;
+  flex: 0 0 auto;
+  height: 21px;
+  margin-right: 8px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  overflow: hidden;
+  width: 21px;
+}
+
+.location span {
+  font-size: 16px;
+  font-family: "font-moderat-light";
+  color: #1d1d1d;
+  flex: 0 0 auto;
+}
+
+.location :last-child {
+  flex: 0 0 auto;
+  height: 7px;
+  margin-left: 10px;
+  margin-top: 4px;
+  width: auto;
+}
+
 /*# sourceMappingURL=compile.css.map */
