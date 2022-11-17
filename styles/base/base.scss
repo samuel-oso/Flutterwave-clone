@@ -9,6 +9,7 @@ body {
   @extend %cover;
 
   font-family: "font-moderat-regular";
+  color: $cod-gray;
 }
 
 a {
@@ -27,6 +28,10 @@ button {
 
 #main {
   display: block;
+
+  @include breakpoint-up(desktop) {
+    display: block !important;
+  }
 }
 
 .mb-0 {

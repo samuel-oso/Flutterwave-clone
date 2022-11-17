@@ -3,6 +3,7 @@
 
   @include breakpoint-up(desktop) {
     padding: 100px 20px 0;
+    display: block !important;
   }
 }
 
@@ -52,7 +53,6 @@
 .footer__header h6 {
   font-family: "font-moderat-medium";
   position: relative;
-  color: $cod-gray;
   font-size: 18px;
   line-height: 20px;
   padding: 2px;
@@ -79,7 +79,6 @@
 
 .footer__nav p {
   font-family: "font-moderat-light";
-  color: $cod-gray;
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 24px;
@@ -148,7 +147,6 @@
 .copywrite {
   font-family: "font-moderat-light";
   font-size: 16px;
-  color: $cod-gray;
 }
 
 .location :first-child {
@@ -169,7 +167,6 @@
 .location span {
   font-size: 16px;
   font-family: "font-moderat-light";
-  color: $cod-gray;
   flex: 0 0 auto;
 }
 

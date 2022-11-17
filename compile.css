@@ -142,21 +142,20 @@ body {
   justify-content: center;
 }
 
-.api__container h2, .commerce__container h2, .payments__container h2 {
+.global__container h2, .api__container h2, .commerce__container h2, .payments__container h2 {
   font-family: "font-millik";
   font-size: 35px;
   line-height: 44px;
   font-weight: 500;
-  color: #1d1d1d;
 }
 @media (min-width: 601px) {
-  .api__container h2, .commerce__container h2, .payments__container h2 {
+  .global__container h2, .api__container h2, .commerce__container h2, .payments__container h2 {
     font-size: 50px;
     line-height: 56px;
   }
 }
 @media (min-width: 901px) {
-  .api__container h2, .commerce__container h2, .payments__container h2 {
+  .global__container h2, .api__container h2, .commerce__container h2, .payments__container h2 {
     font-size: 80px;
     line-height: 86px;
   }
@@ -206,6 +205,7 @@ body {
 
 body {
   font-family: "font-moderat-regular";
+  color: #1d1d1d;
 }
 
 a {
@@ -224,6 +224,11 @@ button {
 
 #main {
   display: block;
+}
+@media (min-width: 901px) {
+  #main {
+    display: block !important;
+  }
 }
 
 .mb-0 {
@@ -695,7 +700,6 @@ button {
   line-height: 26px;
   margin-bottom: 30px;
   max-width: 100%;
-  color: #1d1d1d;
 }
 @media (min-width: 601px) {
   .customer__content__item2 p {
@@ -750,7 +754,6 @@ button {
   justify-content: flex-start;
   margin-left: -18px;
   margin-right: -18px;
-  color: #1d1d1d;
 }
 @media (min-width: 601px) {
   .business__list {
@@ -860,7 +863,6 @@ button {
   line-height: 28px;
   margin-bottom: 30px;
   padding-left: 5px;
-  color: #1d1d1d;
 }
 @media (min-width: 601px) {
   .payments__features__content p {
@@ -1010,7 +1012,6 @@ button {
   line-height: 28px;
   margin-bottom: 27px;
   padding-left: 5px;
-  color: #1d1d1d;
 }
 @media (min-width: 601px) {
   .commerce__section__card p,
@@ -1085,7 +1086,6 @@ button {
 }
 
 .commerce__tools {
-  color: #1d1d1d;
   font-family: "font-moderat-light";
   font-size: 36px;
   line-height: 50px;
@@ -1167,7 +1167,6 @@ button {
 
 .api__container p {
   font-family: "font-moderat-light";
-  color: #1d1d1d;
   margin-bottom: 31px;
   max-width: 619px;
   font-size: 18px;
@@ -1186,7 +1185,6 @@ button {
 
 .api__list li {
   font-family: "font-moderat-light";
-  color: #1d1d1d;
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 26px;
@@ -1220,6 +1218,194 @@ button {
     font-size: 16px;
     line-height: 19px;
   }
+}
+
+.global {
+  padding: 20px;
+  overflow: hidden;
+}
+@media (min-width: 601px) {
+  .global {
+    padding: 160px 20px;
+  }
+}
+
+.global__container {
+  max-width: 1092px;
+  margin: 0 auto;
+}
+
+@media (min-width: 601px) {
+  .global__card {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.global__card__section {
+  width: 100%;
+  flex: 0 1 auto;
+}
+@media (min-width: 601px) {
+  .global__card__section {
+    width: 50%;
+  }
+}
+
+.globe {
+  display: block;
+  --globe-size: 65vw;
+  margin: 50px auto 0;
+  transform: translateX(0);
+  margin-top: 40px;
+  margin-bottom: -16px;
+  position: relative;
+  width: var(--globe-size);
+  height: var(--globe-size);
+  background-color: #262c55;
+  border-radius: 100%;
+}
+@media (min-width: 601px) {
+  .globe {
+    --globe-size: 700px;
+    margin-top: -60px;
+    margin-left: auto;
+    transform: translateX(2%);
+  }
+}
+
+.globe__card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  -webkit-clip-path: inset(0);
+  clip-path: inset(0);
+}
+
+.globe__map {
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  display: flex;
+  flex-direction: row;
+  --anim-duration: 5s;
+  animation: spin var(--anim-duration) linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(-170%);
+  }
+}
+.globe__map img {
+  object-position: top center;
+  transform-origin: top left;
+  pointer-events: none;
+  opacity: 0.6;
+  height: calc(var(--globe-size) + 8.4vw);
+}
+@media (min-width: 601px) {
+  .globe__map img {
+    height: calc(var(--globe-size) + 120px);
+  }
+}
+
+.global__container h2 {
+  margin-bottom: 35px;
+  letter-spacing: -0.7px;
+}
+@media (min-width: 601px) {
+  .global__container h2 {
+    letter-spacing: -2px;
+    word-spacing: 3px;
+    margin-bottom: 106px;
+    max-width: 842px;
+  }
+}
+@media (min-width: 901px) {
+  .global__container h2 {
+    font-size: 80px;
+    max-width: 842px;
+  }
+}
+
+.global__container h2 span {
+  color: #6672c7;
+}
+
+.global__lists {
+  position: relative;
+}
+
+.global .global__lists:before {
+  background-image: url(../../images/sections/dots.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 5px;
+  width: 1px;
+}
+
+.global__list {
+  padding-left: 37px;
+}
+
+.global__list:not(:last-child) {
+  margin-bottom: 62px;
+}
+
+.global__list h5:before {
+  border: 1px solid #000;
+  content: "";
+  height: 25px;
+  left: -37px;
+  position: absolute;
+  top: 5px;
+  width: 2px;
+}
+
+.global__list h5 {
+  font-family: "font-moderat-bold";
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.global__list:first-child h5 {
+  color: #00abab;
+}
+
+.global__list p,
+.global__ul li {
+  font-family: "font-moderat-regular";
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.global__ul {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 400px;
+}
+
+.global__ul li {
+  flex: 0 0 auto;
+  margin-bottom: 12px;
+  width: calc(50% - 30px);
 }
 
 .contact {
@@ -1326,6 +1512,7 @@ button {
 @media (min-width: 901px) {
   .footer {
     padding: 100px 20px 0;
+    display: block !important;
   }
 }
 
@@ -1377,7 +1564,6 @@ button {
 .footer__header h6 {
   font-family: "font-moderat-medium";
   position: relative;
-  color: #1d1d1d;
   font-size: 18px;
   line-height: 20px;
   padding: 2px;
@@ -1404,7 +1590,6 @@ button {
 
 .footer__nav p {
   font-family: "font-moderat-light";
-  color: #1d1d1d;
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 24px;
@@ -1477,7 +1662,6 @@ button {
 .copywrite {
   font-family: "font-moderat-light";
   font-size: 16px;
-  color: #1d1d1d;
 }
 
 .location :first-child {
@@ -1498,7 +1682,6 @@ button {
 .location span {
   font-size: 16px;
   font-family: "font-moderat-light";
-  color: #1d1d1d;
   flex: 0 0 auto;
 }
 

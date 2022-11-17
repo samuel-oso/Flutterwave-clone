@@ -98,7 +98,6 @@
   line-height: 28px;
   margin-bottom: 27px;
   padding-left: 5px;
-  color: $cod-gray;
 
   @include breakpoint-up(tablet) {
     font-size: 20px;
@@ -167,7 +166,6 @@
 }
 
 .commerce__tools {
-  color: $cod-gray;
   font-family: "font-moderat-light";
   font-size: 36px;
   line-height: 50px;

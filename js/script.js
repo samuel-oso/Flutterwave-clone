@@ -5,13 +5,16 @@ $(".menu").click(function () {
 function buttonClicked() {
   var x = document.getElementById("nav__dropdown");
   var main = document.getElementById("main");
+  var footer = document.querySelector("footer");
 
   if (x.style.display === "block") {
     x.style.display = "none";
     main.style.display = "block";
+    footer.style.display = "block";
   } else {
     x.style.display = "block";
     main.style.display = "none";
+    footer.style.display = "none";
   }
 }
 
