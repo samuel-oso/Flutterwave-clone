@@ -1323,6 +1323,11 @@ button {
 .footer {
   padding: 20px 20px 0;
 }
+@media (min-width: 901px) {
+  .footer {
+    padding: 100px 20px 0;
+  }
+}
 
 .footer__container {
   margin: 0 auto;
@@ -1338,11 +1343,28 @@ button {
   border: none !important;
   padding: 0;
 }
+@media (min-width: 901px) {
+  .footer__card {
+    flex-direction: inherit;
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 901px) {
+  .footer__card:not(:last-of-type) {
+    border-bottom: 1px solid #f3f3f3 !important;
+  }
+}
 
 .footer__card__content {
   position: relative;
   flex: 0 1 auto;
   width: 100%;
+}
+@media (min-width: 901px) {
+  .footer__card__content {
+    width: 20%;
+  }
 }
 
 .footer__header {
@@ -1353,6 +1375,7 @@ button {
 }
 
 .footer__header h6 {
+  font-family: "font-moderat-medium";
   position: relative;
   color: #1d1d1d;
   font-size: 18px;
@@ -1367,6 +1390,17 @@ button {
   overflow: hidden;
   padding-bottom: 0;
 }
+@media (min-width: 901px) {
+  .footer__nav {
+    height: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: none;
+  }
+}
 
 .footer__nav p {
   font-family: "font-moderat-light";
@@ -1380,6 +1414,12 @@ button {
   word-wrap: break-word;
   max-width: 100%;
 }
+@media (min-width: 901px) {
+  .footer__nav p {
+    line-height: 26px;
+    margin-bottom: 0px;
+  }
+}
 
 .footer__nav :last-child {
   margin-bottom: 0px;
@@ -1389,6 +1429,12 @@ button {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 901px) {
+  .footer__header img {
+    display: none;
+  }
 }
 
 .footer__card__content.active .footer__nav {
@@ -1403,6 +1449,12 @@ button {
   overflow: hidden;
   transition: 0.5s;
 }
+@media (min-width: 901px) {
+  .footer__card__content.active .footer__nav {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
 
 .location,
 .copywrite {
@@ -1411,6 +1463,15 @@ button {
   border-bottom: 1px solid #f3f3f3;
   margin-bottom: 20px;
   padding-bottom: 30px;
+  width: 100%;
+}
+@media (min-width: 901px) {
+  .location,
+  .copywrite {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
 }
 
 .copywrite {
@@ -1447,6 +1508,33 @@ button {
   margin-left: 10px;
   margin-top: 4px;
   width: auto;
+}
+
+@media (min-width: 901px) {
+  .ft__lg {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 901px) {
+  .ft__lg div {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 901px) {
+  .lg__content div {
+    display: none;
+  }
+}
+
+@media (min-width: 901px) {
+  .lg__content nav {
+    display: flex;
+    flex-direction: inherit;
+    padding-bottom: 0px;
+    gap: 24px;
+  }
 }
 
 /*# sourceMappingURL=compile.css.map */

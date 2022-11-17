@@ -1,5 +1,9 @@
 .footer {
   padding: 20px 20px 0;
+
+  @include breakpoint-up(desktop) {
+    padding: 100px 20px 0;
+  }
 }
 
 .footer__container {
@@ -15,12 +19,27 @@
   justify-content: space-between;
   border: none !important;
   padding: 0;
+
+  @include breakpoint-up(desktop) {
+    flex-direction: inherit;
+    padding: 30px 0;
+  }
+}
+
+.footer__card:not(:last-of-type) {
+  @include breakpoint-up(desktop) {
+    border-bottom: 1px solid #f3f3f3 !important;
+  }
 }
 
 .footer__card__content {
   position: relative;
   flex: 0 1 auto;
   width: 100%;
+
+  @include breakpoint-up(desktop) {
+    width: 20%;
+  }
 }
 
 .footer__header {
@@ -31,6 +50,7 @@
 }
 
 .footer__header h6 {
+  font-family: "font-moderat-medium";
   position: relative;
   color: $cod-gray;
   font-size: 18px;
@@ -45,6 +65,16 @@
   margin-bottom: 30px;
   overflow: hidden;
   padding-bottom: 0;
+
+  @include breakpoint-up(desktop) {
+    height: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: none;
+  }
 }
 
 .footer__nav p {
@@ -58,6 +88,11 @@
   transition: color 0.3s ease;
   word-wrap: break-word;
   max-width: 100%;
+
+  @include breakpoint-up(desktop) {
+    line-height: 26px;
+    margin-bottom: 0px;
+  }
 }
 
 .footer__nav :last-child {
@@ -68,6 +103,12 @@
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transition: transform 0.3s ease-in-out;
+}
+
+.footer__header img {
+  @include breakpoint-up(desktop) {
+    display: none;
+  }
 }
 
 .footer__card__content.active .footer__nav {
@@ -81,6 +122,11 @@
   margin-bottom: 30px;
   overflow: hidden;
   transition: 0.5s;
+
+  @include breakpoint-up(desktop) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 .location,
@@ -90,6 +136,13 @@
   border-bottom: 1px solid #f3f3f3;
   margin-bottom: 20px;
   padding-bottom: 30px;
+  width: 100%;
+
+  @include breakpoint-up(desktop) {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
 }
 
 .copywrite {
@@ -126,4 +179,31 @@
   margin-left: 10px;
   margin-top: 4px;
   width: auto;
+}
+
+.ft__lg {
+  @include breakpoint-up(desktop) {
+    flex-direction: row-reverse;
+  }
+}
+
+.ft__lg div {
+  @include breakpoint-up(desktop) {
+    width: fit-content;
+  }
+}
+
+.lg__content div {
+  @include breakpoint-up(desktop) {
+    display: none;
+  }
+}
+
+.lg__content nav {
+  @include breakpoint-up(desktop) {
+    display: flex;
+    flex-direction: inherit;
+    padding-bottom: 0px;
+    gap: 24px;
+  }
 }
