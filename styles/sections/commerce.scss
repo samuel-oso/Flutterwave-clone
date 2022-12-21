@@ -3,7 +3,7 @@
   background-color: $link-water;
 
   @include breakpoint-up(tablet) {
-    padding: 170px 20px;
+    padding: 160px 20px;
   }
 }
 
@@ -15,11 +15,8 @@
 .commerce__container h2 {
   @extend %heading;
   margin-bottom: 62px;
-  letter-spacing: -0.7px;
 
   @include breakpoint-up(tablet) {
-    letter-spacing: -2px;
-    word-spacing: 3px;
     margin-bottom: 108px;
   }
 }

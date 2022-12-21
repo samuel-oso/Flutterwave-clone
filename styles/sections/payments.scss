@@ -2,11 +2,11 @@
   padding: 70px 20px;
 
   @include breakpoint-up(tablet) {
-    padding: 170px 20px;
+    padding: 130px 20px 160px;
   }
 
   @include breakpoint-up(desktop) {
-    padding: 190px 20px;
+    padding: 168px 20px 160px;
   }
 }
 
@@ -23,6 +23,10 @@
   @include breakpoint-up(tablet) {
     letter-spacing: -2px;
     word-spacing: 3px;
+  }
+
+  @include breakpoint-up(desktop) {
+    letter-spacing: -3px;
   }
 }
 
